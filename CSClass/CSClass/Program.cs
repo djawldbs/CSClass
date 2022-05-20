@@ -47,6 +47,10 @@ namespace CSClass
             Console.WriteLine(Math.Round(52.273));
             Console.WriteLine(Math.PI);
 
+
+            Hamburger nyam = new Hamburger();
+
+
         }
     }
 }
