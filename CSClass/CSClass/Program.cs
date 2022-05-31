@@ -50,6 +50,18 @@ namespace CSClass
 
             Hamburger nyam = new Hamburger();
 
+            Product productA = new Product();
+            productA.name = "포켓몬 빵";
+            productA.price = 1500;
+
+            Product productB = new Product() { name = "소금빵", price = 2000 };
+            Product productC = new Product() { name = "당근케이크"};
+
+
+            Method method = new Method();
+            Console.WriteLine(method.Multi(52.1, 273));
+
+            Console.WriteLine(method.sum(1,100));
 
         }
     }
