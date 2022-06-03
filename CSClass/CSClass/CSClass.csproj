@@ -43,9 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Box.cs" />
+    <Compile Include="Box1.cs" />
+    <Compile Include="Box2.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="food.cs" />
     <Compile Include="Method.cs" />
+    <Compile Include="MyMath.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

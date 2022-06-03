@@ -60,9 +60,31 @@ namespace CSClass
 
             Method method = new Method();
             Console.WriteLine(method.Multi(52.1, 273));
-
             Console.WriteLine(method.sum(1,100));
+            Console.WriteLine(method.multiply(1, 10));
+            Console.WriteLine(Method.Abs(-100));
 
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-52));
+
+            Console.WriteLine(MyMath.Abs(52.273));
+            Console.WriteLine(MyMath.Abs(-52.273));
+
+            Console.WriteLine(MyMath.Abs(2223456789L));
+            Console.WriteLine(MyMath.Abs(-2223456789L));
+
+
+            Box1 box1 = new Box1(10, 10);
+            box1.width = -10;
+            Console.WriteLine("box1의 면적은 : "+box1.Area());
+
+            Box2 box2 = new Box2(10, -10);
+            box2.setWidth(-10);
+            Console.WriteLine("box2의 면적은 : " + box2.Area());
+
+            Box box = new Box(10, 10);
+            box.Width = -10;
+            Console.WriteLine("box의 면적은 : " + box.Area);
         }
     }
 }
