@@ -91,9 +91,14 @@ namespace CSClass
             Console.WriteLine(Fibonacci.Get(100));
             Console.WriteLine(Fibonacci.Get(1000));
 
-            List<Dog> dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
-            List<Cat> cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
-
+            // List<Dog> dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
+            //List<Cat> cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
+            List<Animal> animals = new List<Animal>()
+            {
+                new Dog(), new Dog(), new Dog(),
+                 new Cat(), new Cat(), new Cat()
+            };
+            /*
             foreach(var item in dogs)
             {
                 item.Eat();
@@ -105,6 +110,13 @@ namespace CSClass
                 item.Eat();
                 item.Sleep();
                 item.Meow();
+            }
+            */
+            foreach(var item in animals)
+            {
+                item.Eat();
+                item.Sleep();
+                //((Dog)item).Bark();
             }
         }
     }
