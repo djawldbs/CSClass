@@ -117,6 +117,15 @@ namespace CSClass
                 item.Eat();
                 item.Sleep();
                 //((Dog)item).Bark();
+                if(item is Dog)
+                {
+                    //item.Bark(); //이런거 안됨
+                    ((Dog)item).Bark();
+                }else if(item is Cat)
+                {
+                    Cat cat= (Cat)item;
+                    cat.Meow();
+                }
             }
         }
     }
