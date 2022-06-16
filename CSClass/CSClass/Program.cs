@@ -134,6 +134,20 @@ namespace CSClass
                     Cat cat= (Cat)item;
                     cat.Meow();
                 }
+
+                Child childA = new Child();
+                child childB = new child("string");
+
+                Parent parent = new Parent();
+                Child child = new Child();
+                parent.CountParent();
+                chlid.CountParent();
+                Console.WriteLine("p counter:  "+parent.counter+" / c counter: "+Chlid.counter);
+                parent.CountParent();
+                Console.WriteLine("p counter:  "+parent.counter+" / c counter: "+Chlid.counter);
+                child.CountParent();
+                Console.WriteLine("p counter:  "+parent.counter+" / c counter: "+Chlid.counter);
+
             }
         }
     }
